@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://sgsdsv.tribancoseguros.com.br/#",
+    "testFiles": "**/*.{feature,features}"
+}

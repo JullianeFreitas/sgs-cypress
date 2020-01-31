@@ -1,0 +1,25 @@
+{
+  "name": "curso-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cpf": "^2.0.1",
+    "cpf-cnpj-validator": "^0.1.0",
+    "cypress": "^3.6.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "cypress-plugin-tab": "^1.0.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
