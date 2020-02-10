@@ -3,7 +3,7 @@ import MainPage from './pages/MainPage'
 
 describe('Validações Sinistro', () => {
 
-    it('Procurar sinistro por data', () => {
+    it('Procurar sinistro por data e editar', () => {
 
         const home = new MainPage()
         cy.get(home.openMenu).click({ force: true })

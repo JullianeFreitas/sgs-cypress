@@ -8,6 +8,8 @@ class SinistroPage{
     cpfCnpj = ':nth-child(2) > :nth-child(2) > .ng-untouched > .ui-float-label > .ng-pristine'
     searchNumeroSinistro = '.ng-untouched > .ui-inputtext'
     existeGrid = '.ui-table-scrollable-body-table'
+    primeiroRegGrid = ':nth-child(1) > .actions-row > .p-0 > .ui-button > .mdi'
+
     //Editar
     infoSeguradoCpf = '.mt-4 > .ng-dirty > .ui-float-label > .ng-untouched'
     infoProdutoSeguradora = '[legend="Informações do Produto"] > .fieldset > :nth-child(2) > .mt-0 > app-dropdown.ng-untouched > .ui-float-label > .ng-untouched > .ui-dropdown > .ui-dropdown-label'
@@ -37,13 +39,13 @@ class SinistroPage{
     salvarSinistro = '.actions > .mr-2'
     limparPesquisa = '[icon="mdi mdi-eraser"]'
 
+    teste = '[label="Salvar"]'
 
 
 
-    selectDataSinistro(){
-        cy.get(this.dataCadastroSinistro).click()
-        cy.get(this.dataInicio).click()
-        cy.get(this.dataHoje).click()
+
+    selectDataSinistro(data){
+        cy.get(this.dataTodosCampos).type(data)
     }
 
     clickSearchButton(){

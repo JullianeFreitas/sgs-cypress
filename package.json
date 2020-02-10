@@ -20,6 +20,6 @@
     "cypress-plugin-tab": "^1.0.5"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": false
   }
 }
